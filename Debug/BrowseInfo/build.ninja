@@ -1,0 +1,41 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+
+
+
+#Build steps
+build C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\main.c -xcl_file C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.xcl -macro_file C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\main.c -o C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.tmp
+  rspfile_name = C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.xcl.rsp
+
+build C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.pbi : INDEXER C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.xcl |  $
+C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\main.c
+  flags = -out=C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.pbi -f C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.xcl
+
+build C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\desafio.pbw : MAKEBROWSE C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\desafio.pbd
+  flags = C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\desafio.pbd -output C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\desafio.pbw
+
+build C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\desafio.pbd : PDBLINK C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.pbi
+  flags = -M C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\desafio.pbd C$:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\BrowseInfo\main.pbi
+

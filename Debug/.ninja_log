@@ -1,0 +1,7 @@
+# ninja log v5
+0	218	6399736628672208	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/startup_TM4C1294.o	74f463bf6d7c3f0
+185	396	6399736630382207	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/main.o	7fe134de6ddb9279
+187	407	6399736630382207	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/RTX_Config.o	97c87959baa434bf
+222	440	6399736630842215	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/system_TM4C1294_TW.o	efa1b3bacb72fe4e
+404	493	6399736631382205	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/rtx_lib.o	dcce70fa09e05e95
+503	901	6399736635456114	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Exe/desafio.out	6f201b48d0307a19

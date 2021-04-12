@@ -1,0 +1,323 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  12/Apr/2021  20:34:23
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Exe\desafio.out
+#    Map file     =
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\List\desafio.map
+#    Command line =
+#        -f
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Exe\desafio.out.rsp
+#        (C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\ewarm\Exe\driverlib.a
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Obj\main.o
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Library\IAR\IDE\CM4F\Exe\RTX_CM.a
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Obj\RTX_Config.o
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Obj\rtx_lib.o
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Obj\startup_TM4C1294.o
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Obj\system_TM4C1294_TW.o
+#        --no_out_extension -o
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Exe\desafio.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\List\desafio.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.0\arm\CONFIG\generic_cortex.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+  Section               Kind         Address    Size  Object
+  -------               ----         -------    ----  ------
+"A0":                                          0x3c0
+  .intvec               ro code          0x0   0x3c0  startup_TM4C1294.o [1]
+                                     - 0x3c0   0x3c0
+
+"P1":                                          0xb0d
+  .text                 ro code        0x3c0   0x274  sysctl.o [4]
+  .rodata               const          0x634   0x21c  sysctl.o [4]
+  .text                 ro code        0x850   0x1e8  rtx_thread.o [2]
+  .text                 ro code        0xa38     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa3a     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa3c     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa3e     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa40     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa42     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa44     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa46     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa48     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa4a     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa4c    0x28  rtx_thread.o [2]
+  .text                 ro code        0xa74     0x2  rtx_evr.o [2]
+  .text                 ro code        0xa76    0x20  RTX_Config.o [1]
+  .text                 ro code        0xa96    0x3a  packbits_init_single.o [5]
+  .text                 ro code        0xad0    0xfc  rtx_system.o [2]
+  .text                 ro code        0xbcc     0xc  os_systick.o [2]
+  .text                 ro code        0xbd8    0xc4  irq_cm4f.o [2]
+  .rodata               const          0xc9c    0x68  rtx_lib.o [1]
+  .text                 ro code        0xd04    0x38  zero_init3.o [5]
+  .rodata               const          0xd3c    0x30  sysctl.o [4]
+  .text                 ro code        0xd6c    0x28  data_init.o [5]
+  .rodata               const          0xd94    0x24  rtx_lib.o [1]
+  .rodata               const          0xdb8    0x24  rtx_lib.o [1]
+  .iar.init_table       const          0xddc    0x20  - Linker created -
+  .text                 ro code        0xdfc    0x20  system_TM4C1294_TW.o [1]
+  .text                 ro code        0xe1c    0x1e  cmain.o [5]
+  .text                 ro code        0xe3a     0x4  low_level_init.o [3]
+  .text                 ro code        0xe3e     0x4  main.o [1]
+  .text                 ro code        0xe42     0x4  exit.o [3]
+  .text                 ro code        0xe46     0x2  startup_TM4C1294.o [1]
+  .text                 ro code        0xe48     0xa  cexit.o [5]
+  .text                 ro code        0xe54    0x14  exit.o [6]
+  .text                 ro code        0xe68    0x1c  cstartup_M.o [5]
+  .text                 ro code        0xe84    0x14  startup_TM4C1294.o [1]
+  .rodata               const          0xe98    0x18  rtx_lib.o [1]
+  .text                 ro code        0xeb0     0xc  rtx_kernel.o [2]
+  .rodata               const          0xebc     0x4  rtx_lib.o [1]
+  .rodata               const          0xec0     0x0  zero_init3.o [5]
+  .rodata               const          0xec0     0x0  packbits_init_single.o [5]
+  Initializer bytes     const          0xec0     0xd  <for P2-1>
+                                     - 0xecd   0xb0d
+
+"P2", part 1 of 3:                              0xa4
+  P2-1                           0x2000'0000    0xa4  <Init block>
+    .data.os            inited   0x2000'0000    0xa4  rtx_kernel.o [2]
+                               - 0x2000'00a4    0xa4
+
+"P2", part 2 of 3:                            0x1350
+  .bss.os               zero     0x2000'00a8  0x1000  rtx_lib.o [1]
+  .bss.os.thread.stack  zero     0x2000'10a8   0x100  rtx_lib.o [1]
+  .bss.os.thread.stack  zero     0x2000'11a8   0x100  rtx_lib.o [1]
+  .bss.os.msgqueue.mem  zero     0x2000'12a8    0x50  rtx_lib.o [1]
+  .bss.os.thread.cb     zero     0x2000'12f8    0x44  rtx_lib.o [1]
+  .bss.os.thread.cb     zero     0x2000'133c    0x44  rtx_lib.o [1]
+  .bss.os               zero     0x2000'1380    0x40  rtx_lib.o [1]
+  .bss.os.msgqueue.cb   zero     0x2000'13c0    0x34  rtx_lib.o [1]
+                               - 0x2000'13f4  0x1350
+
+"P2", part 3 of 3:                             0x404
+  .noinit               uninit   0x2000'13f4     0x4  system_TM4C1294_TW.o [1]
+  CSTACK                         0x2000'13f8   0x400  <Block>
+    CSTACK              uninit   0x2000'13f8   0x400  <Block tail>
+                               - 0x2000'17f8   0x404
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0xecd     0x7'ffff  0x7'f133
+  0x2000'17f8  0x2000'ffff    0xe808
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x134c:
+          0x2000'00a8  0x134c
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0xd (7% of destination):
+                0xec0     0xd
+    1 destination range, total size 0xa4:
+          0x2000'0000    0xa4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Obj: [1]
+    RTX_Config.o                 32
+    main.o                        4
+    rtx_lib.o                            204    4'940
+    startup_TM4C1294.o          982
+    system_TM4C1294_TW.o         32                 4
+    -------------------------------------------------
+    Total:                    1'050      204    4'944
+
+RTX_CM.a: [2]
+    irq_cm4f.o                  196
+    os_systick.o                 12
+    rtx_evr.o                    22
+    rtx_kernel.o                 12       13      164
+    rtx_system.o                252
+    rtx_thread.o                528
+    -------------------------------------------------
+    Total:                    1'022       13      164
+
+dl7M_tln.a: [3]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+driverlib.a: [4]
+    sysctl.o                    628      588
+    -------------------------------------------------
+    Total:                      628      588
+
+rt7M_tl.a: [5]
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 28
+    data_init.o                  40
+    packbits_init_single.o       58
+    zero_init3.o                 56
+    -------------------------------------------------
+    Total:                      222
+
+shb_l.a: [6]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          2                 4
+    Linker created                        32    1'024
+-----------------------------------------------------
+    Grand Total:              2'952      837    6'136
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base         0xddc           --   Gb  - Linker created -
+.iar.init_table$$Limit        0xdfc           --   Gb  - Linker created -
+?main                         0xe1d          Code  Gb  cmain.o [5]
+CSTACK$$Base            0x2000'13f8           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'17f8           --   Gb  - Linker created -
+EvrRtxDelayCompleted          0xa39     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxEventFlagsWaitTimeout
+                              0xa3d     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxMemoryPoolAllocTimeout
+                              0xa43     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxMessageQueueGetTimeout
+                              0xa45     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxMessageQueuePutTimeout
+                              0xa47     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxMutexAcquireTimeout
+                              0xa3f     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxSemaphoreAcquireTimeout
+                              0xa41     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxThreadFlagsWaitTimeout
+                              0xa3b     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxThreadPreempted         0xa4b     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxThreadSwitched          0xa75     0x2  Code  Gb  rtx_evr.o [2]
+EvrRtxThreadUnblocked         0xa49     0x2  Code  Gb  rtx_evr.o [2]
+OS_Tick_AcknowledgeIRQ        0xbcd     0xc  Code  Gb  os_systick.o [2]
+PendSV_Handler                0xc71          Code  Gb  irq_cm4f.o [2]
+Region$$Table$$Base           0xddc           --   Gb  - Linker created -
+Region$$Table$$Limit          0xdfc           --   Gb  - Linker created -
+SVC_Handler                   0xbd9          Code  Gb  irq_cm4f.o [2]
+SysCtlClockFreqSet            0x3e3   0x218  Code  Gb  sysctl.o [4]
+SysTick_Handler               0xc81          Code  Gb  irq_cm4f.o [2]
+SystemCoreClock         0x2000'13f4     0x4  Data  Gb  system_TM4C1294_TW.o [1]
+SystemInit                    0xdfd    0x10  Code  Gb  system_TM4C1294_TW.o [1]
+_SysCtlMemTimingGet           0x3c1    0x22  Code  Lc  sysctl.o [4]
+__Vectors                       0x0           --   Gb  startup_TM4C1294.o [1]
+__Vectors_End                 0x3c0          Data  Gb  startup_TM4C1294.o [1]
+__Vectors_Size {Abs}          0x3c0           --   Gb  startup_TM4C1294.o [1]
+__cmain                       0xe1d          Code  Gb  cmain.o [5]
+__exit                        0xe55    0x14  Code  Gb  exit.o [6]
+__iar_data_init3              0xd6d    0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp                0xe8d          Code  Wk  startup_TM4C1294.o [1]
+__iar_packbits_init_single3
+                              0xa97    0x3a  Code  Gb  packbits_init_single.o [5]
+__iar_program_start           0xe69          Code  Gb  cstartup_M.o [5]
+__iar_zero_init3              0xd05    0x38  Code  Gb  zero_init3.o [5]
+__low_level_init              0xe3b     0x4  Code  Gb  low_level_init.o [3]
+__vector_table                  0x0          Data  Gb  startup_TM4C1294.o [1]
+__vector_table_0x1c            0x1c          Data  Gb  startup_TM4C1294.o [1]
+_call_main                    0xe29          Code  Gb  cmain.o [5]
+_exit                         0xe49          Code  Gb  cexit.o [5]
+exit                          0xe43     0x4  Code  Gb  exit.o [3]
+g_pppui32XTALtoVCO            0x634   0x1b0  Data  Lc  sysctl.o [4]
+g_pui32VCOFrequencies         0x62c     0x8  Data  Lc  sysctl.o [4]
+g_pui32Xtals                  0x7e4    0x6c  Data  Lc  sysctl.o [4]
+g_sXTALtoMEMTIM               0xd3c    0x30  Data  Lc  sysctl.o [4]
+main                          0xe3f     0x4  Code  Gb  main.o [1]
+osRtxConfig                   0xc9c    0x68  Data  Gb  rtx_lib.o [1]
+osRtxErrorNotify              0xa77    0x20  Code  Gb  RTX_Config.o [1]
+osRtxInfo               0x2000'0000    0xa4  Data  Gb  rtx_kernel.o [2]
+osRtxPendSV_Handler           0xb41    0x88  Code  Gb  rtx_system.o [2]
+osRtxThreadBlock              0x97f    0x34  Code  Lc  rtx_thread.o [2]
+osRtxThreadDelayTick          0x891    0xee  Code  Gb  rtx_thread.o [2]
+osRtxThreadDispatch           0x9cf    0x54  Code  Gb  rtx_thread.o [2]
+osRtxThreadListPut            0x851    0x22  Code  Gb  rtx_thread.o [2]
+osRtxThreadListRemove         0x873    0x16  Code  Gb  rtx_thread.o [2]
+osRtxThreadReadyPut           0x889     0x8  Code  Gb  rtx_thread.o [2]
+osRtxThreadStackCheck         0xa4d    0x28  Code  Gb  rtx_thread.o [2]
+osRtxThreadSwitch             0x9b3    0x1c  Code  Gb  rtx_thread.o [2]
+osRtxTick_Handler             0xad1    0x6e  Code  Gb  rtx_system.o [2]
+osRtxUserSVC                  0xebc     0x4  Data  Gb  rtx_lib.o [1]
+os_idle_thread_attr           0xd94    0x24  Data  Lc  rtx_lib.o [1]
+os_idle_thread_cb       0x2000'12f8    0x44  Data  Lc  rtx_lib.o [1]
+os_idle_thread_stack    0x2000'10a8   0x100  Data  Lc  rtx_lib.o [1]
+os_isr_queue            0x2000'1380    0x40  Data  Lc  rtx_lib.o [1]
+os_mem                  0x2000'00a8  0x1000  Data  Lc  rtx_lib.o [1]
+os_timer_mq_attr              0xe98    0x18  Data  Lc  rtx_lib.o [1]
+os_timer_mq_cb          0x2000'13c0    0x34  Data  Lc  rtx_lib.o [1]
+os_timer_mq_data        0x2000'12a8    0x50  Data  Lc  rtx_lib.o [1]
+os_timer_thread_attr          0xdb8    0x24  Data  Lc  rtx_lib.o [1]
+os_timer_thread_cb      0x2000'133c    0x44  Data  Lc  rtx_lib.o [1]
+os_timer_thread_stack   0x2000'11a8   0x100  Data  Lc  rtx_lib.o [1]
+
+
+[1] = C:\Users\Mateus\Documents\UTFPR\Embarcados\EK-TM4C1294_RTOS_IAR8\Projects\desafio\Debug\Obj
+[2] = RTX_CM.a
+[3] = dl7M_tln.a
+[4] = driverlib.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  2'952 bytes of readonly  code memory
+    837 bytes of readonly  data memory
+  6'136 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
