@@ -77,10 +77,13 @@ void threadLed(void *args)
     threadArgument *tArgs = (threadArgument *)args;
 
     int intensity = 50;
+
     int selectedLed = 0;
+    int selectedIntensity = 50;
 
     osStatus_t status;
     message msg;
+    uint8_t isSelected = 0;
 
     while (1)
     {
@@ -89,27 +92,32 @@ void threadLed(void *args)
         if (status == osOK)
         {
             selectedLed = msg.led;
-            selectedLed;
+            selectedIntensity = msg.intensity;
+
+            if (selectedLed == 1 && tArgs->ledNumber == LED1)
+                isSelected = 1;
+            else if (selectedLed == 2 && tArgs->ledNumber == LED2)
+                isSelected = 1;
+            else if (selectedLed == 3 && tArgs->ledNumber == LED3)
+                isSelected = 1;
+            else if (selectedLed == 4 && tArgs->ledNumber == LED4)
+                isSelected = 1;
+            else
+                isSelected = 0;
         }
 
-        if (selectedLed == 1 && tArgs->ledNumber == LED1)
+        if (isSelected)
         {
+            // osDelay(500);
+            intensity = selectedIntensity;
+            softwarePwm(tArgs->ledNumber, (float)intensity);
             osDelay(1000);
+            osThreadYield();
         }
-        if (selectedLed == 2 && tArgs->ledNumber == LED2)
+        else
         {
-            osDelay(1000);
+            softwarePwm(tArgs->ledNumber, (float)intensity);
         }
-        if (selectedLed == 3 && tArgs->ledNumber == LED3)
-        {
-            osDelay(1000);
-        }
-        if (selectedLed == 4 && tArgs->ledNumber == LED4)
-        {
-            osDelay(1000);
-        }
-
-        softwarePwm(tArgs->ledNumber, (float)intensity);
     }
 }
 
@@ -135,6 +143,9 @@ void threadManager(void *args)
                     .led = selectedLed,
                 };
                 osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
+                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
+                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
+                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
             }
         }
         else if (flag & FLAG_BUTTON_2)
@@ -149,6 +160,9 @@ void threadManager(void *args)
                     .intensity = intensity[selectedLed],
                     .led = selectedLed,
                 };
+                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
+                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
+                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
                 osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
             }
         }
