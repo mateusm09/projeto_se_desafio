@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>5</fileVersion>
-    <fileChecksum>3340157058</fileChecksum>
+    <fileChecksum>2158496566</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
+            <file>$PROJ_DIR$\..\prodcons\src\prodcons.c</file>
             <file>$PROJ_DIR$\src\startup_TM4C1294.s</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
@@ -59,7 +60,7 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 32 25</file>
+                    <file> 33 26</file>
                 </tool>
             </outputs>
         </file>
@@ -68,13 +69,13 @@
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 12</file>
+                    <file> 13</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 29</file>
+                    <file> 30</file>
                 </tool>
             </inputs>
         </file>
@@ -83,13 +84,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 13</file>
+                    <file> 14</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 39 1 2 31 9 44 18 34 19 38 41 35 30 26 28 43</file>
+                    <file> 40 2 3 32 10 45 19 35 20 39 42 36 31 27 29 44</file>
                 </tool>
             </inputs>
         </file>
@@ -98,13 +99,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10</file>
+                    <file> 11</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 39 1 2 5 9 44 18 34 19 14 11 38 46 42 47</file>
+                    <file> 40 2 3 6 10 45 19 35 20 15 12 39 47 43 48</file>
                 </tool>
             </inputs>
         </file>
@@ -113,13 +114,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 8</file>
+                    <file> 9</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 39 1 2 31 44 18 19 41 30 28 43</file>
+                    <file> 40 2 3 32 45 19 20 42 31 29 44</file>
                 </tool>
             </inputs>
         </file>
@@ -128,13 +129,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 24</file>
+                    <file> 25</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 39 1 2 5 9 44 18 34 19 14 11 38 42</file>
+                    <file> 40 2 3 6 10 45 19 35 20 15 12 39 43</file>
                 </tool>
             </inputs>
         </file>
@@ -143,13 +144,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 40</file>
+                    <file> 41</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 39 1 2 5 31 44 18 19 14 11 36 33 45 35 28</file>
+                    <file> 40 2 3 6 32 45 19 20 15 12 37 34 46 36 29</file>
                 </tool>
             </inputs>
         </file>
@@ -158,7 +159,7 @@
             <inputs>
                 <tool>
                     <name>OBJCOPY</name>
-                    <file> 32</file>
+                    <file> 33</file>
                 </tool>
             </inputs>
         </file>
@@ -167,17 +168,17 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 25</file>
+                    <file> 26</file>
                 </tool>
                 <tool>
                     <name>OBJCOPY</name>
-                    <file> 20</file>
+                    <file> 21</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 37 21 27 22 23 7 24 8 13 10 12 40 6</file>
+                    <file> 38 22 28 23 24 8 25 9 14 11 13 41 7</file>
                 </tool>
             </inputs>
         </file>

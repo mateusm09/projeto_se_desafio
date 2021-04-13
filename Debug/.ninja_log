@@ -5,3 +5,14 @@
 222	440	6399736630842215	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/system_TM4C1294_TW.o	efa1b3bacb72fe4e
 404	493	6399736631382205	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/rtx_lib.o	dcce70fa09e05e95
 503	901	6399736635456114	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Exe/desafio.out	6f201b48d0307a19
+1	21	6399741854669994	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/startup_TM4C1294.o	fdcf2b7012d8dbc2
+6	149	6399741855900010	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/main.o	96c40e0894363b7
+157	224	6399741856639998	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/RTX_Config.o	75cba2c9366c942
+26	236	6399741856650000	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/driverleds.o	85827079a7cc110d
+176	273	6399741857140006	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/rtx_lib.o	8379a1a150933d32
+233	322	6399741857619999	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/system_TM4C1294_TW.o	891188776ea7ca93
+4	170	6399745286306475	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/main.o	96c40e0894363b7
+1	65	6399745916145223	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/driverbuttons.o	a657754b1c097d56
+73	158	6399745917045207	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Exe/desafio.out	200bfac34de2a32
+1	131	6399748298858384	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Obj/main.o	96c40e0894363b7
+140	214	6399748299668369	C:/Users/Mateus/Documents/UTFPR/Embarcados/EK-TM4C1294_RTOS_IAR8/Projects/desafio/Debug/Exe/desafio.out	200bfac34de2a32
