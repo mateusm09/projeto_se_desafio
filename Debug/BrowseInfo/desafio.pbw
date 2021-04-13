@@ -18359,13 +18359,27 @@
     "scope": null
   },
   {
+    "ID": "c:@ledMutexId",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ledMutexId",
+    "location": {
+      "column": "13",
+      "line": "28",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
+    },
+    "name": "ledMutexId",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@SA@message",
     "What": "Struct",
     "defdec": "Def",
     "display": "",
     "location": {
       "column": "9",
-      "line": "28",
+      "line": "30",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "members": [
@@ -18376,26 +18390,26 @@
         "display": "led",
         "location": {
           "column": "13",
-          "line": "30",
+          "line": "32",
           "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
         },
         "name": "led",
         "origin": "project_file",
-        "scope": "_anonymous_main_c_28_9"
+        "scope": "_anonymous_main_c_30_9"
       },
       {
-        "ID": "c:@SA@message@FI@intensity",
+        "ID": "c:@SA@message@FI@setIntensity",
         "What": "FieldDecl",
         "defdec": "Def",
-        "display": "intensity",
+        "display": "setIntensity",
         "location": {
-          "column": "9",
-          "line": "31",
+          "column": "10",
+          "line": "33",
           "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
         },
-        "name": "intensity",
+        "name": "setIntensity",
         "origin": "project_file",
-        "scope": "_anonymous_main_c_28_9"
+        "scope": "_anonymous_main_c_30_9"
       }
     ],
     "name": "",
@@ -18409,7 +18423,7 @@
     "display": "struct message",
     "location": {
       "column": "3",
-      "line": "32",
+      "line": "34",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "message",
@@ -18423,7 +18437,7 @@
     "display": "",
     "location": {
       "column": "9",
-      "line": "34",
+      "line": "36",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "members": [
@@ -18434,12 +18448,12 @@
         "display": "ledNumber",
         "location": {
           "column": "9",
-          "line": "36",
+          "line": "38",
           "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
         },
         "name": "ledNumber",
         "origin": "project_file",
-        "scope": "_anonymous_main_c_34_9"
+        "scope": "_anonymous_main_c_36_9"
       }
     ],
     "name": "",
@@ -18453,7 +18467,7 @@
     "display": "struct threadArgument",
     "location": {
       "column": "3",
-      "line": "37",
+      "line": "39",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "threadArgument",
@@ -18467,7 +18481,7 @@
     "display": "void uswIntHandler(void)",
     "location": {
       "column": "6",
-      "line": "39",
+      "line": "41",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "uswIntHandler",
@@ -18475,13 +18489,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@779@F@uswIntHandler@button",
+    "ID": "c:main.c@810@F@uswIntHandler@button",
     "What": "Variable",
     "defdec": "Def",
     "display": "button",
     "location": {
       "column": "13",
-      "line": "41",
+      "line": "43",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "button",
@@ -18489,13 +18503,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@875@F@uswIntHandler@currentTick",
+    "ID": "c:main.c@906@F@uswIntHandler@currentTick",
     "What": "Variable",
     "defdec": "Def",
     "display": "currentTick",
     "location": {
       "column": "9",
-      "line": "44",
+      "line": "46",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "currentTick",
@@ -18509,7 +18523,7 @@
     "display": "void initButtons(void)",
     "location": {
       "column": "6",
-      "line": "62",
+      "line": "64",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "initButtons",
@@ -18523,7 +18537,7 @@
     "display": "void softwarePwm(uint8_t, float)",
     "location": {
       "column": "6",
-      "line": "71",
+      "line": "73",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "softwarePwm",
@@ -18537,7 +18551,7 @@
     "display": "void threadLed(void *)",
     "location": {
       "column": "6",
-      "line": "80",
+      "line": "89",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "threadLed",
@@ -18545,13 +18559,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1796@F@threadLed@tArgs",
+    "ID": "c:main.c@1995@F@threadLed@tArgs",
     "What": "Variable",
     "defdec": "Def",
     "display": "tArgs",
     "location": {
       "column": "21",
-      "line": "82",
+      "line": "91",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "tArgs",
@@ -18559,13 +18573,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1849@F@threadLed@intensity",
+    "ID": "c:main.c@2048@F@threadLed@intensity",
     "What": "Variable",
     "defdec": "Def",
     "display": "intensity",
     "location": {
       "column": "9",
-      "line": "83",
+      "line": "92",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "intensity",
@@ -18573,13 +18587,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1876@F@threadLed@status",
+    "ID": "c:main.c@2075@F@threadLed@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
     "location": {
       "column": "16",
-      "line": "85",
+      "line": "94",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "status",
@@ -18587,13 +18601,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1900@F@threadLed@msg",
+    "ID": "c:main.c@2099@F@threadLed@msg",
     "What": "Variable",
     "defdec": "Def",
     "display": "msg",
     "location": {
       "column": "13",
-      "line": "86",
+      "line": "95",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "msg",
@@ -18601,13 +18615,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1920@F@threadLed@isSelected",
+    "ID": "c:main.c@2119@F@threadLed@isSelected",
     "What": "Variable",
     "defdec": "Def",
     "display": "isSelected",
     "location": {
       "column": "10",
-      "line": "88",
+      "line": "97",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "isSelected",
@@ -18615,13 +18629,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1952@F@threadLed@lastWaitTime",
+    "ID": "c:main.c@2151@F@threadLed@lastWaitTime",
     "What": "Variable",
     "defdec": "Def",
     "display": "lastWaitTime",
     "location": {
       "column": "9",
-      "line": "90",
+      "line": "99",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "lastWaitTime",
@@ -18629,13 +18643,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2788@F@threadLed@currentTick",
+    "ID": "c:main.c@3214@F@threadLed@currentTick",
     "What": "Variable",
     "defdec": "Def",
     "display": "currentTick",
     "location": {
       "column": "17",
-      "line": "120",
+      "line": "137",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "currentTick",
@@ -18649,7 +18663,7 @@
     "display": "void threadManager(void *)",
     "location": {
       "column": "6",
-      "line": "138",
+      "line": "157",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "threadManager",
@@ -18657,13 +18671,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3272@F@threadManager@selectedLed",
+    "ID": "c:main.c@3750@F@threadManager@selectedLed",
     "What": "Variable",
     "defdec": "Def",
     "display": "selectedLed",
     "location": {
       "column": "13",
-      "line": "140",
+      "line": "159",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "selectedLed",
@@ -18671,27 +18685,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3304@F@threadManager@ledIntensities",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "ledIntensities",
-    "location": {
-      "column": "13",
-      "line": "141",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
-    },
-    "name": "ledIntensities",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3383@F@threadManager@flag",
+    "ID": "c:main.c@3808@F@threadManager@flag",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag",
     "location": {
       "column": "17",
-      "line": "145",
+      "line": "162",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "flag",
@@ -18699,13 +18699,27 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3643@F@threadManager@msg",
+    "ID": "c:main.c@4068@F@threadManager@msg",
     "What": "Variable",
     "defdec": "Def",
     "display": "msg",
     "location": {
       "column": "21",
-      "line": "153",
+      "line": "170",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
+    },
+    "name": "msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4558@F@threadManager@msg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "msg",
+    "location": {
+      "column": "21",
+      "line": "182",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "msg",
@@ -18719,7 +18733,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "170",
+      "line": "195",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "main",
@@ -18727,13 +18741,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4298@F@main@tArg1",
+    "ID": "c:main.c@5129@F@main@tArg1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tArg1",
     "location": {
       "column": "20",
-      "line": "177",
+      "line": "202",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "tArg1",
@@ -18741,13 +18755,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4347@F@main@tArg2",
+    "ID": "c:main.c@5178@F@main@tArg2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tArg2",
     "location": {
       "column": "20",
-      "line": "178",
+      "line": "203",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "tArg2",
@@ -18755,13 +18769,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4396@F@main@tArg3",
+    "ID": "c:main.c@5227@F@main@tArg3",
     "What": "Variable",
     "defdec": "Def",
     "display": "tArg3",
     "location": {
       "column": "20",
-      "line": "179",
+      "line": "204",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "tArg3",
@@ -18769,13 +18783,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4445@F@main@tArg4",
+    "ID": "c:main.c@5276@F@main@tArg4",
     "What": "Variable",
     "defdec": "Def",
     "display": "tArg4",
     "location": {
       "column": "20",
-      "line": "180",
+      "line": "205",
       "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\main.c"
     },
     "name": "tArg4",
@@ -25949,804 +25963,6 @@
     "scope": null
   },
   {
-    "ID": "c:RTX_Config.h@986@macro@RTX_CONFIG_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "RTX_CONFIG_H_",
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "RTX_CONFIG_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@1439@macro@OS_DYNAMIC_MEM_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_DYNAMIC_MEM_SIZE",
-    "location": {
-      "column": "9",
-      "line": "47",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_DYNAMIC_MEM_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@1646@macro@OS_TICK_FREQ",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_TICK_FREQ",
-    "location": {
-      "column": "9",
-      "line": "54",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_TICK_FREQ",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@1794@macro@OS_ROBIN_ENABLE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_ROBIN_ENABLE",
-    "location": {
-      "column": "9",
-      "line": "60",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_ROBIN_ENABLE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@2001@macro@OS_ROBIN_TIMEOUT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_ROBIN_TIMEOUT",
-    "location": {
-      "column": "9",
-      "line": "67",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_ROBIN_TIMEOUT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@2460@macro@OS_ISR_FIFO_QUEUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_ISR_FIFO_QUEUE",
-    "location": {
-      "column": "9",
-      "line": "79",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_ISR_FIFO_QUEUE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@2642@macro@OS_OBJ_MEM_USAGE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_OBJ_MEM_USAGE",
-    "location": {
-      "column": "9",
-      "line": "85",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_OBJ_MEM_USAGE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@2872@macro@OS_THREAD_OBJ_MEM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_THREAD_OBJ_MEM",
-    "location": {
-      "column": "9",
-      "line": "96",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_THREAD_OBJ_MEM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@3149@macro@OS_THREAD_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_THREAD_NUM",
-    "location": {
-      "column": "9",
-      "line": "103",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_THREAD_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@3428@macro@OS_THREAD_DEF_STACK_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_THREAD_DEF_STACK_NUM",
-    "location": {
-      "column": "9",
-      "line": "110",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_THREAD_DEF_STACK_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@3827@macro@OS_THREAD_USER_STACK_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_THREAD_USER_STACK_SIZE",
-    "location": {
-      "column": "9",
-      "line": "118",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_THREAD_USER_STACK_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@4067@macro@OS_STACK_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_STACK_SIZE",
-    "location": {
-      "column": "9",
-      "line": "127",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_STACK_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@4266@macro@OS_IDLE_THREAD_STACK_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_IDLE_THREAD_STACK_SIZE",
-    "location": {
-      "column": "9",
-      "line": "134",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_IDLE_THREAD_STACK_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@4555@macro@OS_IDLE_THREAD_TZ_MOD_ID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_IDLE_THREAD_TZ_MOD_ID",
-    "location": {
-      "column": "9",
-      "line": "142",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_IDLE_THREAD_TZ_MOD_ID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@4802@macro@OS_STACK_CHECK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_STACK_CHECK",
-    "location": {
-      "column": "9",
-      "line": "149",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_STACK_CHECK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@5076@macro@OS_STACK_WATERMARK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_STACK_WATERMARK",
-    "location": {
-      "column": "9",
-      "line": "156",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_STACK_WATERMARK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@5283@macro@OS_PRIVILEGE_MODE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_PRIVILEGE_MODE",
-    "location": {
-      "column": "9",
-      "line": "164",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_PRIVILEGE_MODE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@5511@macro@OS_TIMER_OBJ_MEM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_TIMER_OBJ_MEM",
-    "location": {
-      "column": "9",
-      "line": "175",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_TIMER_OBJ_MEM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@5777@macro@OS_TIMER_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_TIMER_NUM",
-    "location": {
-      "column": "9",
-      "line": "182",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_TIMER_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@6074@macro@OS_TIMER_THREAD_PRIO",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_TIMER_THREAD_PRIO",
-    "location": {
-      "column": "9",
-      "line": "195",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_TIMER_THREAD_PRIO",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@6333@macro@OS_TIMER_THREAD_STACK_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_TIMER_THREAD_STACK_SIZE",
-    "location": {
-      "column": "9",
-      "line": "203",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_TIMER_THREAD_STACK_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@6625@macro@OS_TIMER_THREAD_TZ_MOD_ID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_TIMER_THREAD_TZ_MOD_ID",
-    "location": {
-      "column": "9",
-      "line": "211",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_TIMER_THREAD_TZ_MOD_ID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@6882@macro@OS_TIMER_CB_QUEUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_TIMER_CB_QUEUE",
-    "location": {
-      "column": "9",
-      "line": "219",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_TIMER_CB_QUEUE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@7124@macro@OS_EVFLAGS_OBJ_MEM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVFLAGS_OBJ_MEM",
-    "location": {
-      "column": "9",
-      "line": "230",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVFLAGS_OBJ_MEM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@7400@macro@OS_EVFLAGS_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVFLAGS_NUM",
-    "location": {
-      "column": "9",
-      "line": "237",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVFLAGS_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@7638@macro@OS_MUTEX_OBJ_MEM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_MUTEX_OBJ_MEM",
-    "location": {
-      "column": "9",
-      "line": "250",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_MUTEX_OBJ_MEM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@7904@macro@OS_MUTEX_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_MUTEX_NUM",
-    "location": {
-      "column": "9",
-      "line": "257",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_MUTEX_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@8152@macro@OS_SEMAPHORE_OBJ_MEM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_SEMAPHORE_OBJ_MEM",
-    "location": {
-      "column": "9",
-      "line": "270",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_SEMAPHORE_OBJ_MEM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@8430@macro@OS_SEMAPHORE_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_SEMAPHORE_NUM",
-    "location": {
-      "column": "9",
-      "line": "277",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_SEMAPHORE_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@8684@macro@OS_MEMPOOL_OBJ_MEM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_MEMPOOL_OBJ_MEM",
-    "location": {
-      "column": "9",
-      "line": "290",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_MEMPOOL_OBJ_MEM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@8960@macro@OS_MEMPOOL_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_MEMPOOL_NUM",
-    "location": {
-      "column": "9",
-      "line": "297",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_MEMPOOL_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@9246@macro@OS_MEMPOOL_DATA_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_MEMPOOL_DATA_SIZE",
-    "location": {
-      "column": "9",
-      "line": "305",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_MEMPOOL_DATA_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@9509@macro@OS_MSGQUEUE_OBJ_MEM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_MSGQUEUE_OBJ_MEM",
-    "location": {
-      "column": "9",
-      "line": "318",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_MSGQUEUE_OBJ_MEM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@9789@macro@OS_MSGQUEUE_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_MSGQUEUE_NUM",
-    "location": {
-      "column": "9",
-      "line": "325",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_MSGQUEUE_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@10077@macro@OS_MSGQUEUE_DATA_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_MSGQUEUE_DATA_SIZE",
-    "location": {
-      "column": "9",
-      "line": "333",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_MSGQUEUE_DATA_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@10335@macro@OS_EVR_INIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_INIT",
-    "location": {
-      "column": "9",
-      "line": "346",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_INIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@10473@macro@OS_EVR_START",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_START",
-    "location": {
-      "column": "9",
-      "line": "352",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_START",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@10789@macro@OS_EVR_LEVEL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_LEVEL",
-    "location": {
-      "column": "9",
-      "line": "363",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_LEVEL",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@11294@macro@OS_EVR_MEMORY_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_MEMORY_FILTER",
-    "location": {
-      "column": "9",
-      "line": "378",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_MEMORY_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@11612@macro@OS_EVR_KERNEL_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_KERNEL_FILTER",
-    "location": {
-      "column": "9",
-      "line": "389",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_KERNEL_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@11930@macro@OS_EVR_THREAD_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_THREAD_FILTER",
-    "location": {
-      "column": "9",
-      "line": "400",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_THREAD_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@12245@macro@OS_EVR_TIMER_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_TIMER_FILTER",
-    "location": {
-      "column": "9",
-      "line": "411",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_TIMER_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@12573@macro@OS_EVR_EVFLAGS_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_EVFLAGS_FILTER",
-    "location": {
-      "column": "9",
-      "line": "422",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_EVFLAGS_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@12889@macro@OS_EVR_MUTEX_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_MUTEX_FILTER",
-    "location": {
-      "column": "9",
-      "line": "433",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_MUTEX_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@13215@macro@OS_EVR_SEMAPHORE_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_SEMAPHORE_FILTER",
-    "location": {
-      "column": "9",
-      "line": "444",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_SEMAPHORE_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@13547@macro@OS_EVR_MEMPOOL_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_MEMPOOL_FILTER",
-    "location": {
-      "column": "9",
-      "line": "455",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_MEMPOOL_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@13882@macro@OS_EVR_MSGQUEUE_FILTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_MSGQUEUE_FILTER",
-    "location": {
-      "column": "9",
-      "line": "466",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_MSGQUEUE_FILTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@14184@macro@OS_EVR_MEMORY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_MEMORY",
-    "location": {
-      "column": "9",
-      "line": "479",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_MEMORY",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@14305@macro@OS_EVR_KERNEL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_KERNEL",
-    "location": {
-      "column": "9",
-      "line": "485",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_KERNEL",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@14426@macro@OS_EVR_THREAD",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_THREAD",
-    "location": {
-      "column": "9",
-      "line": "491",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_THREAD",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@14544@macro@OS_EVR_TIMER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_TIMER",
-    "location": {
-      "column": "9",
-      "line": "497",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_TIMER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@14675@macro@OS_EVR_EVFLAGS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_EVFLAGS",
-    "location": {
-      "column": "9",
-      "line": "503",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_EVFLAGS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@14794@macro@OS_EVR_MUTEX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_MUTEX",
-    "location": {
-      "column": "9",
-      "line": "509",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_MUTEX",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@14923@macro@OS_EVR_SEMAPHORE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_SEMAPHORE",
-    "location": {
-      "column": "9",
-      "line": "515",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_SEMAPHORE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@15058@macro@OS_EVR_MEMPOOL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_MEMPOOL",
-    "location": {
-      "column": "9",
-      "line": "521",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_MEMPOOL",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@15196@macro@OS_EVR_MSGQUEUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_EVR_MSGQUEUE",
-    "location": {
-      "column": "9",
-      "line": "527",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_EVR_MSGQUEUE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:RTX_Config.h@15409@macro@OS_THREAD_LIBSPACE_NUM",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OS_THREAD_LIBSPACE_NUM",
-    "location": {
-      "column": "9",
-      "line": "537",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
-    },
-    "name": "OS_THREAD_LIBSPACE_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:cmsis_iccarm.h@1193@macro@__CMSIS_ICCARM_H__",
     "What": "MacroDef",
     "defdec": "Def",
@@ -33536,6 +32752,1000 @@
     "scope": null
   },
   {
+    "ID": "c:driverbuttons.h@37@macro@__DRIVERBUTTONS_H__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DRIVERBUTTONS_H__",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+    },
+    "name": "__DRIVERBUTTONS_H__",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:driverbuttons.h@91@macro@USW1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USW1",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+    },
+    "name": "USW1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:driverbuttons.h@110@macro@USW2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USW2",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+    },
+    "name": "USW2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ButtonInit",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ButtonInit(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "9",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+    },
+    "name": "ButtonInit",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ButtonRead",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t ButtonRead(uint8_t)",
+    "location": {
+      "column": "16",
+      "line": "10",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+    },
+    "name": "ButtonRead",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ButtonIntEnable",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ButtonIntEnable(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "11",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+    },
+    "name": "ButtonIntEnable",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ButtonIntDisable",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ButtonIntDisable(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "12",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+    },
+    "name": "ButtonIntDisable",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ButtonIntClear",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ButtonIntClear(uint8_t)",
+    "location": {
+      "column": "13",
+      "line": "13",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+    },
+    "name": "ButtonIntClear",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_YSIZET_H",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_YSIZET_H",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@277@macro@_SIZE_T",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_SIZE_T",
+    "location": {
+      "column": "11",
+      "line": "16",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_SIZE_T",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_STD_USING_SIZE_T",
+    "location": {
+      "column": "11",
+      "line": "17",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_STD_USING_SIZE_T",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@T@size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "_Sizet",
+    "location": {
+      "column": "18",
+      "line": "18",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "size_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DATA_PTR_MEM_HELPER1__",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "__DATA_PTR_MEM_HELPER1__",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@T@__data_size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int",
+    "location": {
+      "column": "1",
+      "line": "23",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "__data_size_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@986@macro@RTX_CONFIG_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RTX_CONFIG_H_",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "RTX_CONFIG_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@1439@macro@OS_DYNAMIC_MEM_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_DYNAMIC_MEM_SIZE",
+    "location": {
+      "column": "9",
+      "line": "47",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_DYNAMIC_MEM_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@1646@macro@OS_TICK_FREQ",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_TICK_FREQ",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_TICK_FREQ",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@1794@macro@OS_ROBIN_ENABLE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_ROBIN_ENABLE",
+    "location": {
+      "column": "9",
+      "line": "60",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_ROBIN_ENABLE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@2001@macro@OS_ROBIN_TIMEOUT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_ROBIN_TIMEOUT",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_ROBIN_TIMEOUT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@2460@macro@OS_ISR_FIFO_QUEUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_ISR_FIFO_QUEUE",
+    "location": {
+      "column": "9",
+      "line": "79",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_ISR_FIFO_QUEUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@2642@macro@OS_OBJ_MEM_USAGE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_OBJ_MEM_USAGE",
+    "location": {
+      "column": "9",
+      "line": "85",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_OBJ_MEM_USAGE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@2872@macro@OS_THREAD_OBJ_MEM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_THREAD_OBJ_MEM",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_THREAD_OBJ_MEM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@3149@macro@OS_THREAD_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_THREAD_NUM",
+    "location": {
+      "column": "9",
+      "line": "103",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_THREAD_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@3428@macro@OS_THREAD_DEF_STACK_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_THREAD_DEF_STACK_NUM",
+    "location": {
+      "column": "9",
+      "line": "110",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_THREAD_DEF_STACK_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@3827@macro@OS_THREAD_USER_STACK_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_THREAD_USER_STACK_SIZE",
+    "location": {
+      "column": "9",
+      "line": "118",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_THREAD_USER_STACK_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@4067@macro@OS_STACK_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_STACK_SIZE",
+    "location": {
+      "column": "9",
+      "line": "127",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_STACK_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@4266@macro@OS_IDLE_THREAD_STACK_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_IDLE_THREAD_STACK_SIZE",
+    "location": {
+      "column": "9",
+      "line": "134",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_IDLE_THREAD_STACK_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@4555@macro@OS_IDLE_THREAD_TZ_MOD_ID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_IDLE_THREAD_TZ_MOD_ID",
+    "location": {
+      "column": "9",
+      "line": "142",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_IDLE_THREAD_TZ_MOD_ID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@4802@macro@OS_STACK_CHECK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_STACK_CHECK",
+    "location": {
+      "column": "9",
+      "line": "149",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_STACK_CHECK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@5076@macro@OS_STACK_WATERMARK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_STACK_WATERMARK",
+    "location": {
+      "column": "9",
+      "line": "156",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_STACK_WATERMARK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@5283@macro@OS_PRIVILEGE_MODE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_PRIVILEGE_MODE",
+    "location": {
+      "column": "9",
+      "line": "164",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_PRIVILEGE_MODE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@5511@macro@OS_TIMER_OBJ_MEM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_TIMER_OBJ_MEM",
+    "location": {
+      "column": "9",
+      "line": "175",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_TIMER_OBJ_MEM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@5777@macro@OS_TIMER_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_TIMER_NUM",
+    "location": {
+      "column": "9",
+      "line": "182",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_TIMER_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@6074@macro@OS_TIMER_THREAD_PRIO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_TIMER_THREAD_PRIO",
+    "location": {
+      "column": "9",
+      "line": "195",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_TIMER_THREAD_PRIO",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@6333@macro@OS_TIMER_THREAD_STACK_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_TIMER_THREAD_STACK_SIZE",
+    "location": {
+      "column": "9",
+      "line": "203",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_TIMER_THREAD_STACK_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@6625@macro@OS_TIMER_THREAD_TZ_MOD_ID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_TIMER_THREAD_TZ_MOD_ID",
+    "location": {
+      "column": "9",
+      "line": "211",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_TIMER_THREAD_TZ_MOD_ID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@6882@macro@OS_TIMER_CB_QUEUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_TIMER_CB_QUEUE",
+    "location": {
+      "column": "9",
+      "line": "219",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_TIMER_CB_QUEUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@7124@macro@OS_EVFLAGS_OBJ_MEM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVFLAGS_OBJ_MEM",
+    "location": {
+      "column": "9",
+      "line": "230",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVFLAGS_OBJ_MEM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@7400@macro@OS_EVFLAGS_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVFLAGS_NUM",
+    "location": {
+      "column": "9",
+      "line": "237",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVFLAGS_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@7638@macro@OS_MUTEX_OBJ_MEM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_MUTEX_OBJ_MEM",
+    "location": {
+      "column": "9",
+      "line": "250",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_MUTEX_OBJ_MEM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@7904@macro@OS_MUTEX_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_MUTEX_NUM",
+    "location": {
+      "column": "9",
+      "line": "257",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_MUTEX_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@8152@macro@OS_SEMAPHORE_OBJ_MEM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_SEMAPHORE_OBJ_MEM",
+    "location": {
+      "column": "9",
+      "line": "270",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_SEMAPHORE_OBJ_MEM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@8430@macro@OS_SEMAPHORE_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_SEMAPHORE_NUM",
+    "location": {
+      "column": "9",
+      "line": "277",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_SEMAPHORE_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@8684@macro@OS_MEMPOOL_OBJ_MEM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_MEMPOOL_OBJ_MEM",
+    "location": {
+      "column": "9",
+      "line": "290",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_MEMPOOL_OBJ_MEM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@8960@macro@OS_MEMPOOL_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_MEMPOOL_NUM",
+    "location": {
+      "column": "9",
+      "line": "297",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_MEMPOOL_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@9246@macro@OS_MEMPOOL_DATA_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_MEMPOOL_DATA_SIZE",
+    "location": {
+      "column": "9",
+      "line": "305",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_MEMPOOL_DATA_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@9509@macro@OS_MSGQUEUE_OBJ_MEM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_MSGQUEUE_OBJ_MEM",
+    "location": {
+      "column": "9",
+      "line": "318",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_MSGQUEUE_OBJ_MEM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@9789@macro@OS_MSGQUEUE_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_MSGQUEUE_NUM",
+    "location": {
+      "column": "9",
+      "line": "325",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_MSGQUEUE_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@10077@macro@OS_MSGQUEUE_DATA_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_MSGQUEUE_DATA_SIZE",
+    "location": {
+      "column": "9",
+      "line": "333",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_MSGQUEUE_DATA_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@10335@macro@OS_EVR_INIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_INIT",
+    "location": {
+      "column": "9",
+      "line": "346",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@10473@macro@OS_EVR_START",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_START",
+    "location": {
+      "column": "9",
+      "line": "352",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_START",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@10789@macro@OS_EVR_LEVEL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_LEVEL",
+    "location": {
+      "column": "9",
+      "line": "363",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_LEVEL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@11294@macro@OS_EVR_MEMORY_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_MEMORY_FILTER",
+    "location": {
+      "column": "9",
+      "line": "378",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_MEMORY_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@11612@macro@OS_EVR_KERNEL_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_KERNEL_FILTER",
+    "location": {
+      "column": "9",
+      "line": "389",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_KERNEL_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@11930@macro@OS_EVR_THREAD_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_THREAD_FILTER",
+    "location": {
+      "column": "9",
+      "line": "400",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_THREAD_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@12245@macro@OS_EVR_TIMER_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_TIMER_FILTER",
+    "location": {
+      "column": "9",
+      "line": "411",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_TIMER_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@12573@macro@OS_EVR_EVFLAGS_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_EVFLAGS_FILTER",
+    "location": {
+      "column": "9",
+      "line": "422",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_EVFLAGS_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@12889@macro@OS_EVR_MUTEX_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_MUTEX_FILTER",
+    "location": {
+      "column": "9",
+      "line": "433",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_MUTEX_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@13215@macro@OS_EVR_SEMAPHORE_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_SEMAPHORE_FILTER",
+    "location": {
+      "column": "9",
+      "line": "444",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_SEMAPHORE_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@13547@macro@OS_EVR_MEMPOOL_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_MEMPOOL_FILTER",
+    "location": {
+      "column": "9",
+      "line": "455",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_MEMPOOL_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@13882@macro@OS_EVR_MSGQUEUE_FILTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_MSGQUEUE_FILTER",
+    "location": {
+      "column": "9",
+      "line": "466",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_MSGQUEUE_FILTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@14184@macro@OS_EVR_MEMORY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_MEMORY",
+    "location": {
+      "column": "9",
+      "line": "479",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_MEMORY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@14305@macro@OS_EVR_KERNEL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_KERNEL",
+    "location": {
+      "column": "9",
+      "line": "485",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_KERNEL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@14426@macro@OS_EVR_THREAD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_THREAD",
+    "location": {
+      "column": "9",
+      "line": "491",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_THREAD",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@14544@macro@OS_EVR_TIMER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_TIMER",
+    "location": {
+      "column": "9",
+      "line": "497",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_TIMER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@14675@macro@OS_EVR_EVFLAGS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_EVFLAGS",
+    "location": {
+      "column": "9",
+      "line": "503",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_EVFLAGS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@14794@macro@OS_EVR_MUTEX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_MUTEX",
+    "location": {
+      "column": "9",
+      "line": "509",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_MUTEX",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@14923@macro@OS_EVR_SEMAPHORE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_SEMAPHORE",
+    "location": {
+      "column": "9",
+      "line": "515",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_SEMAPHORE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@15058@macro@OS_EVR_MEMPOOL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_MEMPOOL",
+    "location": {
+      "column": "9",
+      "line": "521",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_MEMPOOL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@15196@macro@OS_EVR_MSGQUEUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_EVR_MSGQUEUE",
+    "location": {
+      "column": "9",
+      "line": "527",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_EVR_MSGQUEUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:RTX_Config.h@15409@macro@OS_THREAD_LIBSPACE_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OS_THREAD_LIBSPACE_NUM",
+    "location": {
+      "column": "9",
+      "line": "537",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.h"
+    },
+    "name": "OS_THREAD_LIBSPACE_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:stddef.h@100@macro@_STDDEF",
     "What": "MacroDef",
     "defdec": "Def",
@@ -33748,199 +33958,31 @@
     "scope": null
   },
   {
-    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_YSIZET_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_YSIZET_H",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@277@macro@_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "16",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STD_USING_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "17",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_STD_USING_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Sizet",
-    "location": {
-      "column": "18",
-      "line": "18",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DATA_PTR_MEM_HELPER1__",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__DATA_PTR_MEM_HELPER1__",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@__data_size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned int",
-    "location": {
-      "column": "1",
-      "line": "23",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__data_size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:driverbuttons.h@37@macro@__DRIVERBUTTONS_H__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DRIVERBUTTONS_H__",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
-    },
-    "name": "__DRIVERBUTTONS_H__",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:driverbuttons.h@91@macro@USW1",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "USW1",
-    "location": {
-      "column": "9",
-      "line": "6",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
-    },
-    "name": "USW1",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:driverbuttons.h@110@macro@USW2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "USW2",
-    "location": {
-      "column": "9",
-      "line": "7",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
-    },
-    "name": "USW2",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ButtonInit",
+    "ID": "c:@F@osRtxIdleThread",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "void ButtonInit(uint8_t)",
+    "defdec": "Def",
+    "display": "void osRtxIdleThread(void *)",
     "location": {
-      "column": "13",
-      "line": "9",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+      "column": "25",
+      "line": "32",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.c"
     },
-    "name": "ButtonInit",
-    "origin": "user_include",
+    "name": "osRtxIdleThread",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@ButtonRead",
+    "ID": "c:@F@osRtxErrorNotify",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t ButtonRead(uint8_t)",
+    "defdec": "Def",
+    "display": "uint32_t osRtxErrorNotify(uint32_t, void *)",
     "location": {
-      "column": "16",
-      "line": "10",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
+      "column": "17",
+      "line": "39",
+      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.c"
     },
-    "name": "ButtonRead",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ButtonIntEnable",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void ButtonIntEnable(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "11",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
-    },
-    "name": "ButtonIntEnable",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ButtonIntDisable",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void ButtonIntDisable(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "12",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
-    },
-    "name": "ButtonIntDisable",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ButtonIntClear",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void ButtonIntClear(uint8_t)",
-    "location": {
-      "column": "13",
-      "line": "13",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\driverbuttons.h"
-    },
-    "name": "ButtonIntClear",
-    "origin": "user_include",
+    "name": "osRtxErrorNotify",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -34039,34 +34081,6 @@
     },
     "name": "SystemCoreClockUpdate",
     "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@osRtxIdleThread",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void osRtxIdleThread(void *)",
-    "location": {
-      "column": "25",
-      "line": "32",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.c"
-    },
-    "name": "osRtxIdleThread",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@osRtxErrorNotify",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint32_t osRtxErrorNotify(uint32_t, void *)",
-    "location": {
-      "column": "17",
-      "line": "39",
-      "path": "C:\\Users\\Mateus\\Documents\\UTFPR\\Embarcados\\EK-TM4C1294_RTOS_IAR8\\Projects\\desafio\\src\\RTX_Config.c"
-    },
-    "name": "osRtxErrorNotify",
-    "origin": "project_file",
     "scope": null
   },
   {
