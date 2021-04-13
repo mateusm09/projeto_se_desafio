@@ -8,17 +8,22 @@
 #include "driverlib/gpio.h"
 #include "driverlib/interrupt.h"
 #include "RTX_Config.h"
+#include "stdbool.h"
 
-#define DEBOUNCE_TIME 100
+#define DEBOUNCE_TIME 200
 
 #define FLAG_BUTTON_1 0x0001
 #define FLAG_BUTTON_2 0x0002
 
-#define MESSAGE_QUEUE_SIZE 16
+#define MESSAGE_QUEUE_SIZE 4
 
 int lastTick = 0;
 osThreadId_t managerId;
-osMessageQueueId_t messageQueueId;
+
+osMessageQueueId_t messageQueueId1;
+osMessageQueueId_t messageQueueId2;
+osMessageQueueId_t messageQueueId3;
+osMessageQueueId_t messageQueueId4;
 
 typedef struct
 {
@@ -75,44 +80,53 @@ void softwarePwm(uint8_t led, float dutyCycle)
 void threadLed(void *args)
 {
     threadArgument *tArgs = (threadArgument *)args;
-
     int intensity = 50;
-
-    int selectedLed = 0;
-    int selectedIntensity = 50;
 
     osStatus_t status;
     message msg;
-    uint8_t isSelected = 0;
 
+    bool isSelected = false;
+
+    int lastWaitTime = 0;
     while (1)
     {
-        status = osMessageQueueGet(messageQueueId, &msg, NULL, 0);
+        if (tArgs->ledNumber == LED1)
+        {
+            status = osMessageQueueGet(messageQueueId1, &msg, NULL, 0);
+        }
+        else if (tArgs->ledNumber == LED2)
+        {
+            status = osMessageQueueGet(messageQueueId2, &msg, NULL, 0);
+        }
+        else if (tArgs->ledNumber == LED3)
+        {
+            status = osMessageQueueGet(messageQueueId3, &msg, NULL, 0);
+        }
+        else if (tArgs->ledNumber == LED4)
+        {
+            status = osMessageQueueGet(messageQueueId4, &msg, NULL, 0);
+        }
 
         if (status == osOK)
         {
-            selectedLed = msg.led;
-            selectedIntensity = msg.intensity;
-
-            if (selectedLed == 1 && tArgs->ledNumber == LED1)
-                isSelected = 1;
-            else if (selectedLed == 2 && tArgs->ledNumber == LED2)
-                isSelected = 1;
-            else if (selectedLed == 3 && tArgs->ledNumber == LED3)
-                isSelected = 1;
-            else if (selectedLed == 4 && tArgs->ledNumber == LED4)
-                isSelected = 1;
+            if (msg.led == tArgs->ledNumber)
+                isSelected = true;
             else
-                isSelected = 0;
+                isSelected = false;
         }
 
         if (isSelected)
         {
-            // osDelay(500);
-            intensity = selectedIntensity;
-            softwarePwm(tArgs->ledNumber, (float)intensity);
-            osDelay(1000);
-            osThreadYield();
+            int currentTick = osKernelGetTickCount();
+
+            if (currentTick - lastWaitTime < 500)
+            {
+                softwarePwm(tArgs->ledNumber, (float)intensity);
+            }
+            else if (currentTick - lastWaitTime > 1000)
+            {
+                lastWaitTime = currentTick;
+            }
         }
         else
         {
@@ -123,8 +137,8 @@ void threadLed(void *args)
 
 void threadManager(void *args)
 {
-    int selectedLed = 0;
-    int intensity[4] = {50, 50, 50, 50};
+    uint8_t selectedLed = 0x1;
+    uint8_t ledIntensities[4] = {50, 50, 50, 50};
 
     while (1)
     {
@@ -132,39 +146,23 @@ void threadManager(void *args)
 
         if (flag & FLAG_BUTTON_1)
         {
-            selectedLed++;
-            if (selectedLed > 4)
-                selectedLed = 0;
+            selectedLed <<= 1;
+            if (selectedLed > 16)
+                selectedLed = 1;
 
-            if (selectedLed >= 1 && selectedLed <= 4)
-            {
-                message msg = {
-                    .intensity = intensity[selectedLed],
-                    .led = selectedLed,
-                };
-                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
-                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
-                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
-                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
-            }
+            message msg = {
+                .intensity = 50,
+                .led = selectedLed,
+            };
+
+            osMessageQueuePut(messageQueueId1, &msg, NULL, osWaitForever);
+            osMessageQueuePut(messageQueueId2, &msg, NULL, osWaitForever);
+            osMessageQueuePut(messageQueueId3, &msg, NULL, osWaitForever);
+            osMessageQueuePut(messageQueueId4, &msg, NULL, osWaitForever);
         }
         else if (flag & FLAG_BUTTON_2)
         {
-            if (selectedLed >= 1 && selectedLed <= 4)
-            {
-                intensity[selectedLed] += 10;
-                if (intensity[selectedLed] > 100)
-                    intensity[selectedLed] = 0;
-
-                message msg = {
-                    .intensity = intensity[selectedLed],
-                    .led = selectedLed,
-                };
-                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
-                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
-                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
-                osMessageQueuePut(messageQueueId, &msg, NULL, osWaitForever);
-            }
+            // ainda nada
         }
     }
 }
@@ -188,7 +186,10 @@ void main(void)
 
     managerId = osThreadNew(threadManager, NULL, NULL);
 
-    messageQueueId = osMessageQueueNew(MESSAGE_QUEUE_SIZE, sizeof(message), NULL);
+    messageQueueId1 = osMessageQueueNew(MESSAGE_QUEUE_SIZE, sizeof(message), NULL);
+    messageQueueId2 = osMessageQueueNew(MESSAGE_QUEUE_SIZE, sizeof(message), NULL);
+    messageQueueId3 = osMessageQueueNew(MESSAGE_QUEUE_SIZE, sizeof(message), NULL);
+    messageQueueId4 = osMessageQueueNew(MESSAGE_QUEUE_SIZE, sizeof(message), NULL);
 
     if (osKernelGetState() == osKernelReady)
         osKernelStart();
